@@ -1,0 +1,90 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+}
+/* name selector */
+body{
+    background-color: darkgray;
+}
+/* Id selector */
+#admin-panel{
+    background-color: rgb(100, 100, 226);
+    color: rgb(8, 8, 8);
+    width: 50%;
+    margin: 10% auto;
+    padding: 25px;
+    text-align: center;
+    
+}
+/* decendent selector */
+#admin-panel h1{
+    color: aliceblue;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#admin-panel img{
+    display: block;
+    text-align: center;
+    width: 110px;
+    margin: auto;
+}
+/* grouping selector */
+input, labels{
+    display: block;
+}
+form{
+    margin-top: 60px;
+}
+input{
+    width: 70%;
+    height: 0px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+/* pseudo element selector */
+input::placeholder{
+    color: rgb(54, 52, 52);
+    text-align: left;
+}
+/* attribute selector */
+input[type="submit"]{
+    width: 20%;
+    margin: 0px auto;
+    text-align: center;
+    transition: 0.8s;
+    background-color: rgb(247, 241, 241);
+    text-transform: uppercase;
+}
+/* pseudo classes  */
+input[type="submit"]:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 1s;
+}
+
+/* class selector */
+.ptag {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.ptag a{
+    text-transform: capitalize;
+    color: black;
+}
+.ptag a:hover {
+    color: rgb(252, 247, 251);
+}
+.ptag a:active{
+    color: blanchedalmond;
+}
